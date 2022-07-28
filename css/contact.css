@@ -1,0 +1,142 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/IMPACT-website/img/은채.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 100px;
+  padding: 4px 1px;
+  margin: 0;
+  animation:2s anim-lineUp ease-out;
+}
+#nav li {
+  float: left;
+  position: relative;
+  margin: 5px 30px;
+  padding: 0;
+}
+.contact{
+    border-bottom: 2px solid white;
+}
+
+#nav li a {
+  border-bottom: 2px solid transparent;
+  display: block;
+  font-size: 18px;
+  padding: 7px 8px;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+  letter-spacing: -6%;
+}
+#nav span li:hover > a {
+  color: #c0c0c0;
+}
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  .text-1{
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -4%;
+  }
+  #text_section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation:4s anim-lineUp ease-out;
+  }
+  .e-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    background-color: white;
+    border-radius:60px ;
+    width: 500px;
+    height: 54px;
+    margin-top: 20px;
+  }
+  .e-mail h1{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -4%;
+  }
+  .kakao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    background-color: white;
+    border-radius:60px ;
+    width: 500px;
+    height: 54px;
+    margin-top: 20px;
+  }
+  .kakao h1{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -4%;
+  }
+  .instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    background-color: white;
+    border-radius:60px ;
+    width: 500px;
+    height: 54px;
+    margin-top: 20px;
+  }
+  .instagram h1{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -4%;
+  }
