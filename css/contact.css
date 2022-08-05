@@ -91,7 +91,7 @@ html {
   }
   .e-mail{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-direction: row;
     text-align: center;
@@ -100,15 +100,25 @@ html {
     width: 500px;
     height: 54px;
     margin-top: 20px;
+  }
+  .e-mail img{
+    margin-left: 20px;
   }
   .e-mail h1{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -4%;
+    margin-left: 10px;
+  }
+  .e-mail h2{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -4%;
+    margin-right: 20px;
   }
   .kakao{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-direction: row;
     text-align: center;
@@ -117,15 +127,25 @@ html {
     width: 500px;
     height: 54px;
     margin-top: 20px;
+  }
+  .kakao img{
+    margin-left: 20px;
   }
   .kakao h1{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -4%;
+    margin-left: 10px;
+  }
+  .kakao h2{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -4%;
+    margin-right: 20px;
   }
   .instagram{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-direction: row;
     text-align: center;
@@ -135,8 +155,18 @@ html {
     height: 54px;
     margin-top: 20px;
   }
+  .instagram img{
+    margin-left: 20px;
+  }
   .instagram h1{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -4%;
+    margin-left: 10px;
+  }
+  .instagram h2{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -4%;
+    margin-right: 20px;
   }
