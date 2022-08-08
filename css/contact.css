@@ -170,3 +170,27 @@ html {
     letter-spacing: -4%;
     margin-right: 20px;
   }
+  #footer_nav{
+    top: 85%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+  #footer_nav li{
+    float: left;
+    padding:8px;
+  }
+
+  footer{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #5a5a5a;
+    background-color: black;
+  }
