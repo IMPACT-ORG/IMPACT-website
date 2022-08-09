@@ -17,6 +17,20 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
+body::-webkit-scrollbar {
+  width: 6px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 25%; /* 스크롤바의 길이 */
+  background: #55565e; /* 스크롤바의 색상 */
+  
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);  /*스크롤바 뒷 배경 색상*/
+}
 #nav {
   position: fixed;
   width: 100%;
@@ -28,6 +42,7 @@ html {
   padding: 4px 1px;
   margin: 0;
   animation:2s anim-lineUp ease-out;
+  z-index: 15;
 }
 #nav li {
   float: left;
@@ -51,6 +66,13 @@ html {
 #nav span li:hover > a {
   border-bottom: 2px solid white;
 }
+#nav.activated{
+  background-color:#323232;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -132,8 +154,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 600;
     letter-spacing: -6%;
   }
   .number {
@@ -148,14 +170,17 @@ html {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 335px;
-    height: 220px;
+    width: 380px;
+    height: 268px;
     background-color: white;
     border-radius: 20px;
     margin: 26px;
   }
   .number_1 h1{
-    font-size: 40px;
+    font-size: 3rem;
+  }
+  .number-1{
+    display: flex;
   }
   .number_2{
     display: flex;
@@ -163,14 +188,17 @@ html {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 335px;
-    height: 220px;
+    width: 380px;
+    height: 268px;
     background-color: white;
     border-radius: 20px;
     margin: 26px;
   }
   .number_2 h1{
-    font-size: 40px;
+    font-size: 3rem;
+  }
+  .number-2{
+    display: flex;
   }
   .number_3{
     display: flex;
@@ -178,14 +206,17 @@ html {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 335px;
-    height: 220px;
+    width: 380px;
+    height: 268px;
     background-color: white;
     border-radius: 20px;
     margin: 26px;
   }
   .number_3 h1{
-    font-size: 40px;
+    font-size: 3rem;
+  }
+  .number-3{
+    display: flex;
   }
   .about_text{
     background-color: #f2f5f8;
@@ -196,8 +227,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 600;
     letter-spacing: -6%;
   }
   .about {
@@ -212,7 +243,7 @@ html {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 580px;
+    width: 490px;
     height: 280px;
     background-color: white;
     border-radius: 20px;
@@ -227,11 +258,23 @@ html {
     background-color: #f2f5f8;
   }
   .about_button{
-    width: 160px;
-    height: 44px;
+    width: 176px;
+    height: 65px;
     border: none;
     padding: 15px 30px;
-    border-radius: 8px;
+    border-radius: 50px;
+    font-size: 16px ;
+    font-weight: 600;
+    background-color: #D9D9D9;
+  }
+  .insta_button{
+    margin-top: 30px;
+    width: 176px;
+    height: 65px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px ;
     font-weight: 600;
     background-color: #D9D9D9;
   }
@@ -244,8 +287,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 700;
     letter-spacing: -6%;
   }
   .insta {
@@ -260,8 +303,8 @@ html {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 300px;
-    height: 440px;
+    width: 380px;
+    height: 510px;
     background-color: white;
     border-radius: 20px;
     margin: 26px;
@@ -275,8 +318,8 @@ html {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 300px;
-    height: 440px;
+    width: 380px;
+    height: 510px;
     background-color: white;
     border-radius: 20px;
     margin: 26px;
@@ -290,8 +333,8 @@ html {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 300px;
-    height: 440px;
+    width: 380px;
+    height: 510px;
     background-color: white;
     border-radius: 20px;
     margin: 26px;
@@ -299,8 +342,10 @@ html {
   .insta_3 h1{
     font-size: 40px;
   }
+  .hello{
+    background: linear-gradient(#f2f5f8, #373737);
+  }
   .int_text{
-    background-color: #f2f5f8;
     text-align: center;
   }
   .int_text_1{
@@ -312,6 +357,7 @@ html {
     font-size: 48px;
     font-weight: 500;
     letter-spacing: -6%;
+    color: white;
   }
   .int_text_2{
     margin-top: -8px;
@@ -321,6 +367,7 @@ html {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: -6%;
+    color: white;
   }
   .int_text_3{
     padding-top: 4px;
@@ -330,6 +377,7 @@ html {
     font-size: 48px;
     font-weight: 500;
     letter-spacing: -6%;
+    color: white;
   }
   .button_1{
     display: flex;
@@ -337,7 +385,6 @@ html {
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    background-color: #f2f5f8;
   }
   .button_2{
     display: flex;
@@ -345,7 +392,7 @@ html {
     justify-content: center;
     align-items: center;
     padding-top: 16px;
-    background-color: #f2f5f8;
+    padding-bottom: 200px;
   }
   .button_3{
     width: 325px;
@@ -354,7 +401,9 @@ html {
     padding: 15px 30px;
     border-radius: 12px;
     font-weight: 600;
-    background-color:rgba(0,0,0, 0.2);
+    background-color:rgba(255,255,255, 0.2);
+    color: white;
+    font-size: 16px;
   }
   .button_4{
     width: 325px;
@@ -363,6 +412,70 @@ html {
     border-radius: 12px;
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0);
-    border-color: white
+    border-color: white;
+    color: white;
+    font-size: 16px;
   }
- 
+  .insta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .card{
+    transition: 0.3s;
+    position: relative;
+    border-radius: 20px;
+    width:380px;
+    height: 515px;
+    overflow: hidden;
+    display: inline-block;
+    margin:10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+  }
+  .card_img{
+    transform: scale(1);
+    transition: 1s;
+  }
+  .card_img:hover{
+    transform: scale(1.05);
+  }
+  .text-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    bottom:0;
+    z-index: 10;
+    text-align: left;
+    color: black;
+    background-color: white;
+    width: 380px;
+    height: 110px;
+  }
+  .text-wrap p{
+    letter-spacing: -4%;
+    font-weight: 500;
+    color:black;
+    line-height: 1.5;
+  }
+  .count-num{
+    display: inline;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  #footer_nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top: 300px;
+  }
+  #footer_nav li{
+    float: left;
+    padding:8px;
+  }

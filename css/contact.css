@@ -16,6 +16,22 @@ html {
     url(/IMPACT-website/img/은채.png);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 6px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 25%; /* 스크롤바의 길이 */
+  background: #55565e; /* 스크롤바의 색상 */
+  
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);  /*스크롤바 뒷 배경 색상*/
 }
 #nav {
   position: fixed;
@@ -54,6 +70,12 @@ html {
 #nav span li:hover > a {
   color: #c0c0c0;
 }
+#nav.activated{
+  background-color:#323232;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 @keyframes anim-lineUp {
     0% {
       opacity: 0;
@@ -91,10 +113,9 @@ html {
   }
   .e-mail{
     display: flex;
-    justify-content: left;
     align-items: center;
     flex-direction: row;
-    text-align: center;
+    justify-content: left;
     background-color: white;
     border-radius:60px ;
     width: 500px;
@@ -114,7 +135,7 @@ html {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -4%;
-    margin-right: 20px;
+    margin-left: 180px;
   }
   .kakao{
     display: flex;
@@ -142,6 +163,7 @@ html {
     font-weight: 500;
     letter-spacing: -4%;
     margin-right: 20px;
+    margin-left: 220px;
   }
   .instagram{
     display: flex;
@@ -169,14 +191,15 @@ html {
     font-weight: 500;
     letter-spacing: -4%;
     margin-right: 20px;
+    margin-left: 300px;
   }
   #footer_nav{
-    top: 85%;
     width: 100%;
     position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 700px;
     list-style: none;
   }
   #footer_nav li{

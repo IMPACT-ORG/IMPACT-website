@@ -17,6 +17,20 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
+body::-webkit-scrollbar {
+  width: 6px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 25%; /* 스크롤바의 길이 */
+  background: #55565e; /* 스크롤바의 색상 */
+  
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);  /*스크롤바 뒷 배경 색상*/
+}
 #nav {
   position: fixed;
   width: 100%;
@@ -47,6 +61,12 @@ html {
   margin: 0;
   text-decoration: none;
   letter-spacing: -6%;
+}
+#nav.activated{
+  background-color:#323232;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .project{
     border-bottom: 2px solid white;
@@ -97,4 +117,17 @@ html {
     justify-content: center;
     align-items: left;
     flex-direction: column;
+  }
+  #footer_nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 700px;
+    list-style: none;
+  }
+  #footer_nav li{
+    float: left;
+    padding:8px;
   }
