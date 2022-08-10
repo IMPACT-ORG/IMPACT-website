@@ -131,3 +131,105 @@ body::-webkit-scrollbar-track {
     float: left;
     padding:8px;
   }
+  .project-container{
+    background-color: white;
+  }
+  .project-category{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  #project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    list-style-type: none;
+    background: white;
+    height: 64px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  }
+  .all{
+    padding: 80px;
+  }
+  .app{
+    padding: 80px;
+  }
+  .web{
+    padding: 80px;
+  }
+  .design{
+    padding: 80px;
+  }
+  .bussiness{
+    padding: 80px;
+  }
+  #project a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration-line: none;
+    color:black;
+  }
+  .project-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .card{
+    transition: 0.3s;
+    position: relative;
+    border-radius: 20px;
+    width:380px;
+    height: 326px;
+    overflow: hidden;
+    display: inline-block;
+    margin:10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+  }
+  .card_img{
+    transform: scale(1);
+    transition: 1s;
+  }
+  .card_img:hover{
+    transform: scale(1.05);
+  }
+  .text-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    bottom:0;
+    z-index: 10;
+    text-align: left;
+    color: black;
+    background-color: #242424;
+    padding-right: 14px;
+    width: 380px;
+    height: 110px;
+  }
+  .text-wrap p{
+    font-size: 16px;
+    letter-spacing: -4%;
+    font-weight: 500;
+    color:#85888C;
+    line-height: 1.5;
+  }
+  .text-wrap h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+  }
+  .project-list-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
