@@ -71,6 +71,7 @@ body::-webkit-scrollbar-track {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  height: 10%;
 }
 
 .container {
@@ -249,6 +250,7 @@ body::-webkit-scrollbar-track {
     border-radius: 20px;
     margin: 26px;
   }
+
   .button{
     display: flex;
     flex-direction: column;
@@ -256,6 +258,11 @@ body::-webkit-scrollbar-track {
     align-items: center;
     padding-top: 16px;
     background-color: #f2f5f8;
+  }
+  .about_button:hover{
+    background-color:#323232;
+    color: white;
+    transition: 1s;
   }
   .about_button{
     width: 176px;
@@ -266,6 +273,11 @@ body::-webkit-scrollbar-track {
     font-size: 16px ;
     font-weight: 600;
     background-color: #D9D9D9;
+  }
+  .insta_button:hover{
+    background-color:#323232;
+    color: white;
+    transition: 1s;
   }
   .insta_button{
     margin-top: 30px;
@@ -378,6 +390,17 @@ body::-webkit-scrollbar-track {
     font-weight: 500;
     letter-spacing: -6%;
     color: white;
+  }
+  .button_3:hover{
+    background-color:#323232;
+    color: white;
+    transition: 1s;
+  }
+  .button_4:hover{
+    background-color:#323232;
+    color: white;
+    transition: 1s;
+    border-color: rgba(0, 0, 0, 0);
   }
   .button_1{
     display: flex;

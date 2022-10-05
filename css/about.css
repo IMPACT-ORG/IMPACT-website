@@ -1,0 +1,306 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/IMPACT-website/img/자훈.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 35%;
+}
+body::-webkit-scrollbar {
+  width: 6px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 25%; /* 스크롤바의 길이 */
+  background: #55565e; /* 스크롤바의 색상 */
+  
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);  /*스크롤바 뒷 배경 색상*/
+}
+#nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 100px;
+  padding: 4px 1px;
+  margin: 0;
+  animation:2s anim-lineUp ease-out;
+  z-index: 10;
+}
+#nav li {
+  float: left;
+  position: relative;
+  margin: 5px 30px;
+  padding: 0;
+}
+
+#nav li a {
+  border-bottom: 2px solid transparent;
+  display: block;
+  font-size: 18px;
+  padding: 7px 8px;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+  letter-spacing: -6%;
+}
+#nav.activated{
+  background-color:#323232;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  height: 10%;
+}
+.about{
+    border-bottom: 2px solid white;
+}
+#nav span li:hover > a {
+    color: #c0c0c0;
+}
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  .text_1{
+    animation:4s anim-lineUp ease-out;
+  }
+  .text-1{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -4%;
+    line-height: 29px;
+  }
+  #text_section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .school-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+  .about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-top: 60px;
+    padding-left: 300px;
+  }
+  .about-text-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-left: 300px;
+    padding-top: 50px;
+  }
+  .about-text-1 h1{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -4%;
+  }
+  .about-text-1 h2{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -4%;
+    margin-top: 10px;
+  }
+  .about-text-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-top: 288px;
+    padding-left: 300px;
+  }
+  .about-text-2 h1{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -4%;
+  }
+  .about-text-2 h2{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -4%;
+    margin-top: 10px;
+  }
+  .about-text h1{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -4%;
+  }
+  .about-text h2{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -4%;
+    margin-top: 10px;
+  }
+  .about-cop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .about-int {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .about-int2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: -20px;
+  }
+  .about_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 1120px;
+    height: 322px;
+    background-color: #474747;
+    border-radius: 20px;
+    margin: 26px;
+  }
+  .about_int_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    box-sizing: border-box;
+    width: 686px;
+    height: 322px;
+    background-color: #474747;
+    border-radius: 20px;
+    margin: 26px;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .about_int_1 h1{
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .about_int_1 h2{
+    font-weight: 300;
+    padding-top: 180px;
+  }
+  .about_1 h1{
+    color: white;
+  }
+  .project-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .card{
+    transition: 0.3s;
+    position: relative;
+    border-radius: 20px;
+    width:520px;
+    height: 260px;
+    overflow: hidden;
+    display: inline-block;
+    margin : 32px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+  }
+  .card_img{
+    transform: scale(1);
+    transition: 1s;
+  }
+  .card_img:hover{
+    transform: scale(1.05);
+  }
+  .text-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+  }
+  .text-wrap p{
+    margin-top: 130px;
+    font-size: 18px;
+    letter-spacing: -4%;
+    font-weight: 300;
+    color:white;
+    line-height: 1.5;
+  }
+  .text-wrap h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-top: 8px;
+  }
+  .project-list-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #footer_nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top: 100px;
+  }
+  #footer_nav li{
+    float: left;
+    padding:8px;
+  }
+  
+.hihi{
+  background: linear-gradient(#f2f5f8 70%, #373737);
+  padding-bottom: 300px;
+}

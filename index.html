@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+
     <title>임팩트-IMPACT</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -44,19 +47,19 @@
       <div class="number_1">
         <h2>운영 기간 🕙</h2>
         <div class="number-1">
-          <h1 class="count-num" data-count="1">0</h1><h1>년</h1>
+          <h1 class="count-num" data-count="1" id="number">0</h1><h1>년</h1>
         </div>
       </div>
       <div class="number_2">
         <h2>현재 활동 인원 🏃🏻‍♀️</h2>
         <div class="number-2">
-          <h1 class="count-num" data-count="11">0</h1><h1>명</h1>
+          <h1 class="count-num" data-count="13" id="number2">0</h1><h1>명</h1>
         </div>
       </div>
       <div class="number_3">
         <h2>런칭 서비스 📱</h2>
         <div class="number-3">
-          <h1 class="count-num" data-count="20">0</h1><h1>+개</h1>
+          <h1 class="count-num" data-count="20" id="number3">0</h1><h1>+개</h1>
         </div>
       </div>
     </div>
@@ -69,7 +72,7 @@
       </div>
     </div>
     <div class="button">
-      <button class="about_button">
+      <button class="about_button" onclick="location.href='/IMPACT-website/html/about.html'">
         더 알아보기
       </button>
     </div>
@@ -97,7 +100,7 @@
          </div>
     </div>
     <div class="button">
-      <button class="insta_button">
+      <button class="insta_button" onclick="location.href='https://www.instagram.com/org_impact/'">
         인스타 팔로우하기
       </button>
     </div>
