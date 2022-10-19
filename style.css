@@ -116,6 +116,7 @@ body::-webkit-scrollbar-track {
 }
 .container_main img {
  position: absolute;
+ width:327px;
 }
 .container_2{
     background-color: #323232;
@@ -578,4 +579,109 @@ body::-webkit-scrollbar-track {
        padding-right: 60px;
        padding-bottom: 10px;
    }
+   .container_main h1{
+    font-size: 14px;
+   }
+   .container_main img{
+    width: 280px;
+   }
+   .number_text h1{
+    font-size: 32px;
+   }
+   .number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f5f8;
+  }
+  .number_1{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .number_2{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .number_3{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .about_text h1{
+    font-size: 32px;
+   }
+   .about_button{
+    width: 140px;
+    height: 50px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px ;
+    font-weight: 600;
+    background-color: #D9D9D9;
+  }
+  .insta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2f5f8;
+  }
+  .card{
+    transition: 0.3s;
+    position: relative;
+    border-radius: 20px;
+    width:300px;
+    height: 420px;
+    overflow: hidden;
+    display: inline-block;
+    margin:10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+  }
+  .text-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    bottom:0;
+    z-index: 10;
+    text-align: left;
+    color: black;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+  }
+  .insta_button{
+    margin-top: 30px;
+    width: 190px;
+    height: 50px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px ;
+    font-weight: 600;
+    background-color: #D9D9D9;
+  }
+  .insta_text h1{
+    font-size: 36px;
+  }
+  .int_text_1{
+    font-size: 40px;
+  }
+  .int_text_2{
+    font-size: 40px;
+  }
+  .int_text_3{
+    font-size: 40px;
+  }
   }
