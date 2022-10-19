@@ -50,6 +50,8 @@ body::-webkit-scrollbar-track {
   position: relative;
   margin: 5px 30px;
   padding: 0;
+}.more-btn{
+  display: none;
 }
 
 .nav li a {
@@ -125,6 +127,7 @@ body::-webkit-scrollbar-track {
     margin-top: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
+    width : 26%;
   }
   .about-text{
     display: flex;
@@ -306,4 +309,118 @@ body::-webkit-scrollbar-track {
 .hihi{
   background: linear-gradient(#f2f5f8 70%, #373737);
   padding-bottom: 300px;
+}
+@media screen and (max-width :680px){
+  .more-btn{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 52px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    z-index: 120;
+  }
+  .more-btn .icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(/IMPACT-website/img/menu.png) no-repeat center;
+    background-size: contain;
+  }
+  .more-btn.active .icon{
+    background: url(/IMPACT-website/img/close.png) no-repeat center;
+    background-size: contain;
+  }
+  .nav{
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      background-color: rgba(14,25,38,0.9);
+      width: 100%;
+      height: 100vh;
+      padding: 4px 1px;
+      margin: 0;
+      animation:2s anim-lineUp ease-out;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+  }
+  .nav.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: 0.5s;
+    z-index: 10;
+  }
+  .text_1 h1{
+    font-size: 20px;
+    margin: 40px;
+  }
+  .about-text{
+    padding-top: 60px;
+    padding-left: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .about-text-1{
+    display: flex;
+    padding-top: 60px;
+    padding-left: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .about-text-2{
+    display: flex;
+    padding-top: 60px;
+    padding-left: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .project-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card{
+    transition: 0.3s;
+    position: relative;
+    border-radius: 20px;
+    width:320px;
+    height: 160px;
+    overflow: hidden;
+    display: inline-block;
+    margin : 32px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+  }
+  .text-wrap h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-top: 8px;
+  }
+  .project-list-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .school-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 40px;
+    margin-top: 0 ;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width : 70%;
+  }
 }
