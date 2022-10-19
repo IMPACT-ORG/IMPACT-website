@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);  /*스크롤바 뒷 배경 색상*/
 }
-#nav {
+.nav {
   position: fixed;
   width: 100%;
   display: flex;
@@ -44,14 +44,17 @@ body::-webkit-scrollbar-track {
   animation:2s anim-lineUp ease-out;
   z-index: 15;
 }
-#nav li {
+.more-btn{
+  display: none;
+}
+.nav li {
   float: left;
   position: relative;
   margin: 5px 30px;
   padding: 0;
 }
 
-#nav li a {
+.nav li a {
   border-bottom: 2px solid transparent;
   display: block;
   font-size: 18px;
@@ -63,10 +66,10 @@ body::-webkit-scrollbar-track {
   text-decoration: none;
   letter-spacing: -6%;
 }
-#nav span li:hover > a {
+.nav span li:hover > a {
   border-bottom: 2px solid white;
 }
-#nav.activated{
+.nav.activated{
   background-color:#323232;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -135,6 +138,13 @@ body::-webkit-scrollbar-track {
   letter-spacing: -2%;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+.navtoogleBtn{
+  display: none;
+  position: absolute;
+  right: 32px;
+  top: 55px;
+  font-size: 24px;
 }
 #main_section {
     margin: 0;
@@ -501,4 +511,71 @@ body::-webkit-scrollbar-track {
   #footer_nav li{
     float: left;
     padding:8px;
+  }
+  @media screen and (max-width :680px){
+    .more-btn{
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 52px;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      border: none;
+      background-color: transparent;
+      z-index: 120;
+    }
+    .more-btn .icon{
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin: 0 auto;
+      background: url(/IMPACT-website/img/menu.png) no-repeat center;
+      background-size: contain;
+    }
+    .more-btn.active .icon{
+      background: url(/IMPACT-website/img/close.png) no-repeat center;
+      background-size: contain;
+    }
+    .nav{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        background-color: rgba(14,25,38,0.9);
+        width: 100%;
+        height: 100vh;
+        padding: 4px 1px;
+        margin: 0;
+        animation:2s anim-lineUp ease-out;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+    }
+    .nav.active{
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+      transition: 0.5s;
+    }
+    .container_2_text h1{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+       font-size: 20px;
+       padding: 16px;
+    }
+    .container_2_text h2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+       font-size: 16px;
+       padding-left: 60px;
+       padding-right: 60px;
+       padding-bottom: 10px;
+   }
   }

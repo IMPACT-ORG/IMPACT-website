@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);  /*스크롤바 뒷 배경 색상*/
 }
-#nav {
+.nav {
   position: fixed;
   width: 100%;
   display: flex;
@@ -43,14 +43,14 @@ body::-webkit-scrollbar-track {
   margin: 0;
   animation:2s anim-lineUp ease-out;
 }
-#nav li {
+.nav li {
   float: left;
   position: relative;
   margin: 5px 30px;
   padding: 0;
 }
 
-#nav li a {
+.nav li a {
   border-bottom: 2px solid transparent;
   display: block;
   font-size: 18px;
@@ -62,7 +62,7 @@ body::-webkit-scrollbar-track {
   text-decoration: none;
   letter-spacing: -6%;
 }
-#nav.activated{
+.nav.activated{
   background-color:#323232;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -73,7 +73,7 @@ body::-webkit-scrollbar-track {
 .project{
     border-bottom: 2px solid white;
 }
-#nav span li:hover > a {
+.nav span li:hover > a {
     color: #c0c0c0;
 }
 @keyframes anim-lineUp {
@@ -239,4 +239,3 @@ body::-webkit-scrollbar-track {
   #project-list{
     background: linear-gradient(#f2f5f8 70%, #373737);
   }
-  
