@@ -310,6 +310,9 @@ body::-webkit-scrollbar-track {
   background: linear-gradient(#f2f5f8 70%, #373737);
   padding-bottom: 300px;
 }
+.text_1-m{
+  display: none;
+}
 @media screen and (max-width :680px){
   .more-btn{
     display: block;
@@ -423,4 +426,16 @@ body::-webkit-scrollbar-track {
     padding-bottom: 80px;
     width : 70%;
   }
+  .text_1{
+    display: none;
+  }
+  .text_1-m{
+    display: flex;
+    animation:4s anim-lineUp ease-out;
+  }
+  .text_1-m h1{
+    font-size: 20px;
+    margin: 40px;
+  }
+
 }
