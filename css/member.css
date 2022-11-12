@@ -71,6 +71,7 @@ body::-webkit-scrollbar-track {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   height: 10%;
+  transition: 1s;
 }
 .member{
     border-bottom: 2px solid white;

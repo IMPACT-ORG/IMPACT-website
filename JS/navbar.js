@@ -1,7 +1,7 @@
 $(function(){
     $(window).scroll(function(){
     var navbar = $(this).scrollTop();
-    var $header = $('#nav');
+    var $header = $('.nav');
     if(navbar > 750){
         $header.addClass('activated');
     }else{

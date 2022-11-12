@@ -78,6 +78,7 @@ body::-webkit-scrollbar-track {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   height: 10%;
+  transition: 1s;
 }
 
 .container {
@@ -309,11 +310,11 @@ body::-webkit-scrollbar-track {
   }
   .insta_text h1{
     padding-top: 300px;
-    padding-bottom: 12px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: -6%;
   }
@@ -516,6 +517,38 @@ body::-webkit-scrollbar-track {
     float: left;
     padding:8px;
   }
+  .slider img {
+    max-width: 100%;
+    position: relative;
+    border-radius: 20px;
+  }
+  .slide{
+    background-color: #f2f5f8;
+  }
+  .slider {
+    width: 1500px;
+    margin: 20px auto;
+  }
+  .slider .slick-slide {
+    margin: 20px;
+  }
+  .slick-prev,
+.slick-next {
+  width: 0px;
+  height: 0px;
+  border: none;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  z-index: 3000;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  outline: none;
+}
+.slide.slick-center img {
+  transition: all 1s ease-out;
+}
   @media screen and (max-width :680px){
     .more-btn{
       display: block;
