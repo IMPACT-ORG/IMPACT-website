@@ -13,7 +13,7 @@ html {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/IMPACT-website/img/임팩트초기멤버.png);
+    url(../img/임팩트초기멤버.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
