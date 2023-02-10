@@ -13,7 +13,7 @@ html {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/임팩트초기멤버.png);
+    url(../img/IMG_0178.JPG);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -101,18 +101,11 @@ body::-webkit-scrollbar-track {
     margin-left: 180px;
     animation:4s anim-lineUp ease-out;
   }
-  .text-1{
-    color: white;
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: -4%;
-  }
   .text-2{
     color: white;
     font-size: 60px;
     font-weight: 800;
     letter-spacing: -2%;
-    margin-top: 60px;
   }
   .text-3{
     color: white;

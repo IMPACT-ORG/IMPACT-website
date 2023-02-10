@@ -13,7 +13,7 @@ html {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/자훈.jpg);
+    url(../img/impact회의모습.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 35%;
@@ -39,7 +39,7 @@ body::-webkit-scrollbar-track {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  height: 100px;
+  height: 96px;
   padding: 4px 1px;
   margin: 0;
   animation:2s anim-lineUp ease-out;
