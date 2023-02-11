@@ -60,17 +60,17 @@ body::-webkit-scrollbar-track {
 .nav li a {
   border-bottom: 2px solid transparent;
   display: block;
-  font-size: 18px;
-  padding: 7px 8px;
+  font-size: 16px;
+  padding: 6px 8px;
   margin: 0;
-  color: white;
-  font-weight: 700;
+  color: #e1e2e6;
+  font-weight: 600;
   margin: 0;
   text-decoration: none;
   letter-spacing: -6%;
 }
 .nav span li:hover > a {
-  border-bottom: 2px solid white;
+  color: white
 }
 .nav.activated{
   background-color:#323232;
@@ -112,15 +112,15 @@ body::-webkit-scrollbar-track {
   justify-content: center;
 }
 .container_main h1 {
-  font-size: 1.3rem;
-  margin-bottom: 90px;
+  font-size: 1.0rem;
+  margin-bottom: 80px;
   letter-spacing: -6%;
   font-weight: 700;
   color: white;
 }
 .container_main img {
  position: absolute;
- width:327px;
+ width: 260px;
 }
 .container_2{
     background-color: #323232;

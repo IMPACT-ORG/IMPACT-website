@@ -53,14 +53,17 @@ body::-webkit-scrollbar-track {
 .more-btn{
   display: none;
 }
+.member a{
+  color: #ffffff !important;
+}
 .nav li a {
   border-bottom: 2px solid transparent;
   display: block;
-  font-size: 18px;
-  padding: 7px 8px;
+  font-size: 16px;
+  padding: 6px 8px;
   margin: 0;
-  color: white;
-  font-weight: 700;
+  color: #e1e2e6;
+  font-weight: 600;
   margin: 0;
   text-decoration: none;
   letter-spacing: -6%;
@@ -73,11 +76,8 @@ body::-webkit-scrollbar-track {
   height: 10%;
   transition: 1s;
 }
-.member{
-    border-bottom: 2px solid white;
-}
 .nav span li:hover > a {
-    color: #c0c0c0;
+    color: white;
 }
 
 @keyframes anim-lineUp {

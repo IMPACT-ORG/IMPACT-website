@@ -55,11 +55,11 @@ body::-webkit-scrollbar-track {
 .nav li a {
   border-bottom: 2px solid transparent;
   display: block;
-  font-size: 18px;
-  padding: 7px 8px;
+  font-size: 16px;
+  padding: 6px 8px;
   margin: 0;
-  color: white;
-  font-weight: 700;
+  color: #e1e2e6;
+  font-weight: 600;
   margin: 0;
   text-decoration: none;
   letter-spacing: -6%;
@@ -73,11 +73,11 @@ body::-webkit-scrollbar-track {
   z-index: 100;
   transition: 1s;
 }
-.project{
-    border-bottom: 2px solid white;
+.project a{
+    color : white;
 }
 .nav span li:hover > a {
-    color: #c0c0c0;
+    color: white;
 }
 @keyframes anim-lineUp {
     0% {
