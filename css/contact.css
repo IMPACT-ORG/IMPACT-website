@@ -206,7 +206,8 @@ body::-webkit-scrollbar-track {
   }
   #footer_nav{
     width: 100%;
-    position: absolute;
+    bottom: 0px;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;

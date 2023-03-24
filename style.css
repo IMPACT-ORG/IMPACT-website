@@ -517,38 +517,18 @@ body::-webkit-scrollbar-track {
     float: left;
     padding:8px;
   }
-  .slider img {
-    max-width: 100%;
-    position: relative;
-    border-radius: 20px;
-  }
+
   .slide{
     background-color: #f2f5f8;
   }
-  .slider {
-    width: 1500px;
-    margin: 20px auto;
+  .video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+padding: 50px;
   }
-  .slider .slick-slide {
-    margin: 20px;
-  }
-  .slick-prev,
-.slick-next {
-  width: 0px;
-  height: 0px;
-  border: none;
-  border-radius: 50%;
-  margin: auto;
-  position: absolute;
-  z-index: 3000;
-  top: 0;
-  bottom: 0;
-  cursor: pointer;
-  outline: none;
-}
-.slide.slick-center img {
-  transition: all 1s ease-out;
-}
+
   @media screen and (max-width :680px){
     .more-btn{
       display: block;
