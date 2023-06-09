@@ -151,6 +151,11 @@ body::-webkit-scrollbar-track {
   top: 55px;
   font-size: 24px;
 }
+iframe{
+  width: 700px;
+  height: 400px;
+  border-radius: 20px;
+}
 #main_section {
     margin: 0;
     padding: 0;
@@ -172,7 +177,7 @@ body::-webkit-scrollbar-track {
     align-items: center;
     font-size: 3rem;
     font-weight: 600;
-    letter-spacing: -6%;
+    letter-spacing: -4px;
   }
   .number {
     display: flex;
@@ -245,7 +250,7 @@ body::-webkit-scrollbar-track {
     align-items: center;
     font-size: 3rem;
     font-weight: 600;
-    letter-spacing: -6%;
+    letter-spacing: -4px;
   }
   .about {
     display: flex;
@@ -278,6 +283,7 @@ body::-webkit-scrollbar-track {
     background-color:#323232;
     color: white;
     transition: 1s;
+    cursor: pointer;
   }
   .about_button{
     width: 176px;
@@ -293,6 +299,7 @@ body::-webkit-scrollbar-track {
     background-color:#323232;
     color: white;
     transition: 1s;
+    cursor: pointer;
   }
   .insta_button{
     margin-top: 30px;
@@ -316,7 +323,7 @@ body::-webkit-scrollbar-track {
     align-items: center;
     font-size: 40px;
     font-weight: 700;
-    letter-spacing: -6%;
+    letter-spacing: -4px;
   }
   .insta {
     display: flex;
@@ -383,7 +390,7 @@ body::-webkit-scrollbar-track {
     align-items: center;
     font-size: 48px;
     font-weight: 500;
-    letter-spacing: -6%;
+    letter-spacing: -2px;
     color: white;
   }
   .int_text_2{
@@ -393,7 +400,7 @@ body::-webkit-scrollbar-track {
     align-items: center;
     font-size: 48px;
     font-weight: 700;
-    letter-spacing: -6%;
+    letter-spacing: -1px;
     color: white;
   }
   .int_text_3{
@@ -403,19 +410,21 @@ body::-webkit-scrollbar-track {
     align-items: center;
     font-size: 48px;
     font-weight: 500;
-    letter-spacing: -6%;
+    letter-spacing: -2px;
     color: white;
   }
   .button_3:hover{
     background-color:#323232;
     color: white;
     transition: 1s;
+    cursor: pointer;
   }
   .button_4:hover{
     background-color:#323232;
     color: white;
     transition: 1s;
     border-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
   }
   .button_1{
     display: flex;
@@ -526,10 +535,16 @@ body::-webkit-scrollbar-track {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-padding: 50px;
+    padding: 50px;
   }
-
-  @media screen and (max-width :680px){
+    @media screen and (max-width :680px){
+      body {
+        overflow-x: hidden;
+      }
+      iframe{
+        width: 320px;
+        height: 200px;
+      }
     .more-btn{
       display: block;
       position: absolute;
@@ -547,11 +562,11 @@ padding: 50px;
       width: 24px;
       height: 24px;
       margin: 0 auto;
-      background: url(/IMPACT-website/img/menu.png) no-repeat center;
+      background: url(./img/menu.png) no-repeat center;
       background-size: contain;
     }
     .more-btn.active .icon{
-      background: url(/IMPACT-website/img/close.png) no-repeat center;
+      background: url(./img/close.png) no-repeat center;
       background-size: contain;
     }
     .nav{
@@ -646,7 +661,7 @@ padding: 50px;
     background-color: #D9D9D9;
   }
   .insta {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #f2f5f8;
@@ -676,6 +691,9 @@ padding: 50px;
     background-color: white;
     width: 300px;
     height: 60px;
+  }
+  .text-wrap p{
+    font-size: 14px;
   }
   .insta_button{
     margin-top: 30px;

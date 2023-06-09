@@ -232,11 +232,11 @@ body::-webkit-scrollbar-track {
     width: 24px;
     height: 24px;
     margin: 0 auto;
-    background: url(/IMPACT-website/img/menu.png) no-repeat center;
+    background: url(/img/menu.png) no-repeat center;
     background-size: contain;
   }
   .more-btn.active .icon{
-    background: url(/IMPACT-website/img/close.png) no-repeat center;
+    background: url(/img/close.png) no-repeat center;
     background-size: contain;
   }
   .nav{
@@ -262,10 +262,6 @@ body::-webkit-scrollbar-track {
     transform: translateX(0);
     transition: 0.5s;
     z-index: 10;
-  }
-  .text_1 h1{
-    font-size: 20px;
-    margin: 40px;
   }
   .about-text{
     padding-top: 60px;
@@ -328,15 +324,15 @@ body::-webkit-scrollbar-track {
     width : 70%;
   }
   .text_1{
-    display: none;
+    margin-left: 30px;
   }
-  .text_1-m{
-    display: flex;
-    animation:4s anim-lineUp ease-out;
+  .text-1{
+    font-size: 34px;
   }
-  .text_1-m h1{
-    font-size: 20px;
-    margin: 40px;
+  .text-2{
+    font-size: 34px;
   }
-
+  .text-4{
+    font-size: 16px;
+  }
 }
