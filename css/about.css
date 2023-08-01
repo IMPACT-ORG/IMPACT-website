@@ -172,6 +172,19 @@ body::-webkit-scrollbar-track {
   letter-spacing: -2%;
   margin-top: 20px;
 }
+.about-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-2 img {
+  margin-left: auto;
+  width: 30%;
+  height: auto;
+  margin-top: 340px;
+  margin-right: 100px;
+}
 .about-part-2{
   display: flex;
   justify-content: start;
