@@ -12,24 +12,34 @@ body,
 html {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./img/impact-lounge단체사진.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  animation: alternatingBackground 20s linear infinite;
 }
+@keyframes alternatingBackground {
+  0% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./img/impact-connect단체사진.jpg);
+  }
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./img/impact-lounge단체사진.jpg);
+  }
+}
+
 body::-webkit-scrollbar {
-  width: 6px;  /* 스크롤바의 너비 */
+  width: 6px; 
 }
 
 body::-webkit-scrollbar-thumb {
-  height: 25%; /* 스크롤바의 길이 */
-  background: #55565e; /* 스크롤바의 색상 */
+  height: 25%;
+  background: #55565e;
   
   border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);  /*스크롤바 뒷 배경 색상*/
+  background: rgba(0, 0, 0, 0);  
 }
 .nav {
   position: fixed;

@@ -17,7 +17,7 @@ function changeNumber() {
 var startCount2 = {var: 0};
 
 gsap.to(startCount2, {
-  var: 13, duration: 1, ease:"none",
+  var: 2, duration: 1, ease:"none",
   onUpdate: changeNumber2,
   scrollTrigger: {
     trigger: "#number2",
@@ -31,7 +31,7 @@ function changeNumber2() {
 var startCount3 = {var: 0};
 
 gsap.to(startCount3, {
-  var: 20, duration: 1, ease:"none",
+  var: 200, duration: 1, ease:"none",
   onUpdate: changeNumber3,
   scrollTrigger: {
     trigger: "#number3",
