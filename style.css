@@ -19,7 +19,7 @@ html {
 @keyframes alternatingBackground {
   0% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/img/impact-connect단체사진.jpg);
+      url(./img/impact-connect-2023.jpg);
   }
   100% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
