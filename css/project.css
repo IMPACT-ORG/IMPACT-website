@@ -171,6 +171,7 @@ body::-webkit-scrollbar-track {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding-top: 80px;
   }
   .card{
     transition: 0.3s;
@@ -190,7 +191,7 @@ body::-webkit-scrollbar-track {
   .card_img:hover{
     transform: scale(1.05);
   }
-  .text-wrap{
+  .text-wrap, .text-wrap2{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -207,14 +208,26 @@ body::-webkit-scrollbar-track {
     height: 110px;
   }
   .text-wrap p{
-    font-size: 16px;
-    letter-spacing: -4%;
-    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -8%;
+    font-weight: 300;
     color:#85888C;
     line-height: 1.5;
   }
   .text-wrap h1{
-    font-size: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+  }
+  .text-wrap2 p{
+    font-size: 14px;
+    letter-spacing: -8%;
+    font-weight: 300;
+    color:#85888C;
+    line-height: 1.5;
+  }
+  .text-wrap2 h1{
+    font-size: 20px;
     font-weight: 700;
     color: white;
   }
@@ -335,5 +348,12 @@ body::-webkit-scrollbar-track {
       display: inline-block;
       margin:10px;
       box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+    }
+    .text-wrap2 p{
+      font-size: 12px;
+      letter-spacing: -8%;
+      font-weight: 300;
+      color:#85888C;
+      line-height: 1.5;
     }
   }
