@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Scrolling</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      -ms-overflow-style: none; 
+      scrollbar-width: none;
+    }
+    .container {
+      position: fixed;
+      left: var(--fixed-x);
+      display: flex;
+      flex-direction: row;
+    }
+    .scroll-item {
+      width: 300px; 
+      height: 200px;
+      align-self: center;
+      padding: 0;
+      margin: 0 1rem;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="scroll-item"></div>
+    <div class="scroll-item"></div>
+    <div class="scroll-item"></div>
+    <div class="scroll-item"></div>
+    <div class="scroll-item"></div>
+    <div class="scroll-item"></div>
+    <div class="scroll-item"></div>
+    <div class="scroll-item"></div>
+  </div>
+  <script>
+    const container = document.getElementsByClassName('container')[0];
+    const items = document.getElementsByClassName('scroll-item');
+
+    for (let i = 0; i < items.length; i++) {
+      items[i].style.backgroundImage = `url("images/${i + 1}.jpeg")`;
+    }
+
+    const containerW = container.offsetWidth;
+    const itemW = containerW / items.length;
+
+    let fixedX = 0;
+    let justMoved = false;
+    let justMovedClearTimeoutId = null;
+
+    function checkOvered() {
+      while (-fixedX >= itemW) {
+        const ele = items[0].cloneNode();
+        container.appendChild(ele);
+        items[0].remove();
+        fixedX += itemW;
+        container.style.left = `${fixedX}px`;
+      }
+      while (fixedX >= 0) {
+        const ele = items[items.length - 1].cloneNode();
+        container.insertBefore(ele, container.firstChild);
+        items[items.length - 1].remove();
+        fixedX -= itemW;
+        container.style.left = `${fixedX}px`;
+      }
+    }
+
+    setInterval(() => {
+      if (!justMoved) {
+        container.style.left = `${fixedX}px`;
+        fixedX -= 2;
+        checkOvered();
+      }
+    }, 20);
+
+    document.body.addEventListener('wheel', (event) => {
+      const delta = (event.deltaX == 0) ? event.deltaY : event.deltaX;
+      if (Math.abs(delta) >= 10) {
+        const alpha = 1 * delta / Math.abs(delta);
+        const gamma = alpha;
+
+        function step() {
+          fixedX -= gamma;
+          container.style.left = `${fixedX}px`;
+          checkOvered();
+          gamma += alpha;
+          if (Math.abs(gamma) < Math.abs(delta / 10)) {
+            setTimeout(step, 5);
+          }
+        }
+
+        setTimeout(step, 5);
+      }
+      fixedX -= delta;
+      container.style.left = `${fixedX}px`;
+      checkOvered();
+      justMoved = true;
+      if (justMovedClearTimeoutId !== null) {
+        clearTimeout(justMovedClearTimeoutId);
+      }
+      justMovedClearTimeoutId = setTimeout(() => {
+        justMoved = false;
+      }, 1000);
+      event.preventDefault();
+      return false;
+    }, { passive: false });
+  </script>
+</body>
+</html>
